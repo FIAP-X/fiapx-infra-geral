@@ -14,6 +14,8 @@ resource "aws_cognito_user_pool" "user_pool" {
     required            = true
   }
 
+  username_attributes = ["email"]
+
   password_policy {
     minimum_length    = 8
     require_uppercase = true
