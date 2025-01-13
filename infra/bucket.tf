@@ -1,10 +1,7 @@
-resource "aws_s3_bucket" "bucket" {
-  bucket = "fiapx-bucket-upload"
+resource "aws_s3_bucket" "bucket_upload" {
+  bucket = var.bucket_upload_name
 }
 
-resource "aws_s3_bucket_versioning" "versioning" {
-  bucket = aws_s3_bucket.bucket.id
-  versioning_configuration {
-    status = "Enabled"
-  }
+resource "aws_s3_bucket" "bucket_processed" {
+  bucket = var.bucket_processed_name
 }

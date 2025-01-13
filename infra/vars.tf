@@ -4,14 +4,12 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "user_pool_name" {
-  description = "Nome do Cognito User Pool"
+variable "bucket_upload_name" {
+  description = "Nome do bucket S3 de upload de vídeos"
   type        = string
-  default     = "fiapx-user-pool"
 }
 
-variable "mfa_configuration" {
-  description = "Configuração de MFA para o User Pool"
+variable "bucket_processed_name" {
+  description = "Nome do bucket S3 de imagens processadas"
   type        = string
-  default     = "OFF"
 }
