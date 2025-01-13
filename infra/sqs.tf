@@ -3,7 +3,7 @@ resource "aws_sqs_queue" "sqs_processamento" {
 }
 
 resource "aws_sqs_queue_policy" "sqs_processamento_policy" {
-  queue_url = aws_sqs_queue.fiapx_sqs_processamento.id
+  queue_url = aws_sqs_queue.sqs_processamento.id
 
   policy = jsonencode({
     Version = "2012-10-17"
