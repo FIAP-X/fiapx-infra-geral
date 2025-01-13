@@ -1,6 +1,6 @@
 resource "aws_cognito_user_pool" "user_pool" {
-  name              = var.user_pool_name
-  mfa_configuration = var.mfa_configuration
+  name              = "fiapx-user-pool"
+  mfa_configuration = "OFF"
 
   schema {
     name                = "name"
