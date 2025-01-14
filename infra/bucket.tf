@@ -18,7 +18,6 @@ resource "aws_s3_bucket_lifecycle_configuration" "lifecycle" {
 }
 
 resource "aws_s3_bucket_notification" "bucket_notification" {
-  name   = "s3-to-sqs-notification"
   bucket = aws_s3_bucket.bucket_upload.id
 
   queue {
