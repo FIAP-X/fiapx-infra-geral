@@ -1,5 +1,14 @@
+resource "aws_sqs_queue" "sqs_processamento_dlq" {
+  name = "fiapx-sqs-processamento-dlq"
+}
+
 resource "aws_sqs_queue" "sqs_processamento" {
   name = "fiapx-sqs-processamento"
+
+  redrive_policy = jsonencode({
+    deadLetterTargetArn = aws_sqs_queue.sqs_dlq_processamento.arn
+    maxReceiveCount     = 3
+  })
 }
 
 resource "aws_sqs_queue_policy" "sqs_processamento_policy" {
