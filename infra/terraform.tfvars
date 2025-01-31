@@ -1,4 +1,4 @@
 bucket_upload_name    = "fiapx-bucket-upload"
 bucket_processed_name = "fiapx-bucket-processed"
-subnet_ids            = ["subnet-072294e19e1c05ea4", "subnet-00890da9b0ab1bb00"]
-vpc_id                = "vpc-04c65ba98c63ff91f"
+subnet_ids            = ["subnet-0a32d873d454e97c2", "subnet-0a2c91a1218f47b78"]
+vpc_id                = "vpc-0c9406a6c30e4bade"
