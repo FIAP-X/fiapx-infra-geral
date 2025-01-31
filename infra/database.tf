@@ -23,7 +23,7 @@ resource "aws_security_group" "fiapx_db_sg" {
   }
 }
 
-resource "aws_db_instance" "lanchonete_db_produto" {
+resource "aws_db_instance" "fiapx_db_produto" {
   db_name             = "fiapx_db"
   identifier          = "fiapx-db"
   allocated_storage   = 20
