@@ -1,2 +1,2 @@
-bucket_upload_name    = "fiapx-bucket-upload"
-bucket_processed_name = "fiapx-bucket-processed"
+bucket_upload_name    = "fiapx-upload-bucket"
+bucket_processed_name = "fiapx-processed-bucket"
